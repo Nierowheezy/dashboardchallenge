@@ -1,5 +1,3 @@
-![alt text](https://github.com/[username]/[reponame]/blob/[master]/Dashboard.png?raw=true)
-
 
 # Getting Started with Create React App
 

@@ -2,7 +2,7 @@ import React, { lazy } from "react";
 import { Route } from "react-router-dom";
 
 const Dashboard = lazy(() => import("./pages/main/Main"));
-const Test = lazy(() => import("./pages/Test/Test"));
+const Settings = lazy(() => import("./pages/settings/Settings"));
 
 const routeList = [
   {
@@ -12,10 +12,10 @@ const routeList = [
     component: Dashboard,
   },
   {
-    path: "/test",
+    path: "/settings",
     exact: true,
-    name: "Test",
-    component: Test,
+    name: "Settings",
+    component: Settings,
   },
 ];
 

@@ -1,6 +1,7 @@
 // import hello from "../../assets/hello.svg";
 // import Chart from "../charts/Chart";
 import NavItem from "../../layout/Navigation/NavItem.jsx";
+import Activities from "../activities/Activities.js";
 import Cards from "../cards/Cards.js";
 import "./Main.css";
 
@@ -27,6 +28,8 @@ const Main = () => {
         <Cards />
 
         {/* <!-- MAIN CARDS ENDS HERE --> */}
+
+        <Activities />
       </div>
     </main>
   );

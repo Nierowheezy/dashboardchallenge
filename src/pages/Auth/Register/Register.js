@@ -5,6 +5,7 @@ import { Link, withRouter } from "react-router-dom";
 import bg from "../../../assets/bg.png";
 import capslock from "../../../assets/capslock.png";
 import logo from "../../../assets/logo.png";
+import Spinner from "../../../components/common/LoginSpinner/Spinner";
 import { registerUser } from "../../../redux/actions/authActions";
 import "./Register.css";
 
@@ -161,6 +162,7 @@ const Register = (props) => {
               <p className="register__button">
                 <input type="submit" name="go" id="go" value="Create account" />
                 <i className="feather icon-arrow-right register__arrow__style"></i>
+                {loading && <Spinner />}
               </p>
 
               <p>

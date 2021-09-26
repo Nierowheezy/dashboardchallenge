@@ -8,6 +8,7 @@ import logo from "../../assets/logo.png";
 import monitor from "../../assets/monitor.png";
 import receipt from "../../assets/receipt.png";
 import request from "../../assets/request.png";
+import settings from "../../assets/settings.png";
 import wallet from "../../assets/wallet.png";
 import NavItem from "../../layout/Navigation/NavItem";
 import "./Sidebar.css";
@@ -91,10 +92,17 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
             </div>
           </div>
 
-          <div className="sidebar__link">
+          {/* <div className="sidebar__link">
             <img src={receipt} alt="logo" />
             <div className="sidebar__link__spacing">
               <NavItem name="Test" link="/test" />
+            </div>
+          </div> */}
+
+          <div className="sidebar__link link__settings">
+            <img src={settings} alt="logo" />
+            <div className="sidebar__link__spacing">
+              <NavItem name="Settings" link="/settings" />
             </div>
           </div>
 

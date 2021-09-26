@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+.activities__card__container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+  position: relative;
+  color: #333333;
+  width: 392px;
+  max-width: 100%;
+}
+
+.activities__card__header {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background-color: #1eb2a6;
+  color: #fff;
+  width: 392px;
+  padding: 10px;
+}
+
+.activities__card__content {
+  margin-top: 10px;
+}
+
+.activities__card__content span {
+  display: flex;
+  justify-content: space-around;
+}
+
+.activities__card__footer {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: #c7ece9;
+  color: #fff;
+  width: 392px;
+  margin-top: 25px;
+  text-align: center;
+  font-size: 12px;
+  padding: 14px;
+}

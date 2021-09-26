@@ -1,0 +1,223 @@
+.register__logo {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  cursor: pointer;
+}
+
+.register__left__content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 250px;
+  left: 30px;
+  width: 362px;
+}
+
+.register__left__content__span {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  top: 130px;
+  left: 2px;
+  width: 160px;
+}
+
+.register__left__content__border {
+  /* margin-top: 10px; */
+  width: 40px;
+  height: 8px;
+  background: #18b2d2;
+}
+
+.register__left__content__border_next {
+  /* margin-top: 10px; */
+  width: 40px;
+  height: 8px;
+  background: #1eb2a6;
+}
+
+.register__left__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  padding: 0 20px;
+  position: absolute;
+  bottom: 30px;
+}
+
+.register__form__overall {
+  display: flex;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+}
+
+.register__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 380px;
+  height: 576px;
+  margin: 26px 300px;
+  border-radius: 0.4em;
+  border-top: 4px solid #1eb2a6;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 2px 4px 2px rgb(0 0 0 / 20%);
+}
+
+form:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 100px;
+  left: 20%;
+  top: 0;
+}
+
+form:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 5px;
+  border-radius: 50%;
+  left: 34%;
+  top: -7px;
+  box-shadow: 0 0 6px 4px #fff;
+}
+
+.inset {
+  padding: 20px;
+}
+
+label {
+  color: #666;
+  display: block;
+  padding-bottom: 9px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 300px;
+  height: 50px;
+  padding: 8px 5px;
+  border: 1px solid #dae2ed;
+  box-shadow: 0 1px 0 rgb(255 255 255 / 10%);
+  border-radius: 0.3em;
+  margin-bottom: 20px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: none;
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.register__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register__arrow__style {
+  position: absolute;
+  left: 246px;
+  color: #ffffff;
+}
+
+input[type="submit"] {
+  width: 160px;
+  height: 30px;
+  padding: 5px 20px;
+  box-shadow: 0 4px 15px -4px #1eb2a6;
+  border: none;
+  border-radius: 0.3em;
+  background: #1eb2a6;
+  color: white;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  box-shadow: 0 4px 15px -4px #179c91;
+}
+
+.register__header__main {
+  margin-top: 20px;
+  display: flex;
+  padding: 10px;
+}
+
+.register__header__text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+.register__pass__forgot {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.register__pass__create {
+  margin-top: 30px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 478px) {
+  .bg-image {
+    display: none;
+  }
+  form {
+    width: 360px;
+  }
+  .register__logo,
+  .register__left__content,
+  .register__left__footer {
+    display: none;
+  }
+
+  .register__arrow__style {
+    left: 236px;
+  }
+}
+
+@media only screen and (max-width: 378px) {
+  .bg-image {
+    display: none;
+  }
+  form {
+    width: 300px;
+  }
+  input[type="text"],
+  input[type="password"] {
+    width: 270px;
+  }
+
+  .register__container {
+    align-items: normal;
+  }
+  .register__pass__forgot {
+    width: 268px;
+  }
+
+  .register__logo,
+  .register__left__content,
+  .register__left__footer {
+    display: none;
+  }
+}

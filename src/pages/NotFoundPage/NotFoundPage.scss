@@ -1,0 +1,32 @@
+.notfound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 1080px;
+
+  & > div {
+    width: 50vh;
+    height: 50vh;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 15vh var(--not-found) solid;
+    box-sizing: initial;
+    color: #6171a0;
+    text-align: center;
+
+    & > div {
+      padding: 10px 20px;
+      border: 0.1px solid #bcbccd;
+      margin-top: 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      i {
+        padding-right: 5px;
+      }
+    }
+  }
+}
